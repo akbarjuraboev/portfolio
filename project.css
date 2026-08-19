@@ -90,7 +90,8 @@
 .gallery-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background: #12100d;
 }
 .gallery-slide figcaption {
   position: absolute;

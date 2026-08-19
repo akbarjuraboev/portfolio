@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1200" width="2000" height="1200">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2c2a26"/>
+      <stop offset="1" stop-color="#2c2a26" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+  <rect width="2000" height="1200" fill="url(#g)"/>
+  <line x1="400.0" y1="900.0" x2="560.0" y2="900.0" stroke="#e8e2d4" stroke-width="2.5" opacity="0.8"/><line x1="560.0" y1="900.0" x2="560.0" y2="972.0" stroke="#e8e2d4" stroke-width="2.5" opacity="0.8"/><line x1="560.0" y1="828.0" x2="720.0" y2="828.0" stroke="#e8e2d4" stroke-width="2.5" opacity="0.8"/><line x1="720.0" y1="828.0" x2="720.0" y2="900.0" stroke="#e8e2d4" stroke-width="2.5" opacity="0.8"/><line x1="720.0" y1="756.0" x2="880.0" y2="756.0" stroke="#e8e2d4" stroke-width="2.5" opacity="0.8"/><line x1="880.0" y1="756.0" x2="880.0" y2="828.0" stroke="#e8e2d4" stroke-width="2.5" opacity="0.8"/><line x1="880.0" y1="684.0" x2="1040.0" y2="684.0" stroke="#e8e2d4" stroke-width="2.5" opacity="0.8"/><line x1="1040.0" y1="684.0" x2="1040.0" y2="756.0" stroke="#e8e2d4" stroke-width="2.5" opacity="0.8"/><line x1="1040.0" y1="612.0" x2="1200.0" y2="612.0" stroke="#e8e2d4" stroke-width="2.5" opacity="0.8"/><line x1="1200.0" y1="612.0" x2="1200.0" y2="684.0" stroke="#e8e2d4" stroke-width="2.5" opacity="0.8"/><line x1="1200.0" y1="540.0" x2="1360.0" y2="540.0" stroke="#e8e2d4" stroke-width="2.5" opacity="0.8"/><line x1="1360.0" y1="540.0" x2="1360.0" y2="612.0" stroke="#e8e2d4" stroke-width="2.5" opacity="0.8"/><line x1="1360.0" y1="468.0" x2="1520.0" y2="468.0" stroke="#e8e2d4" stroke-width="2.5" opacity="0.8"/><line x1="1520.0" y1="468.0" x2="1520.0" y2="540.0" stroke="#e8e2d4" stroke-width="2.5" opacity="0.8"/>
+</svg>

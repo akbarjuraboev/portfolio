@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amber Residence — ARCA Studio</title>
+<meta name="description" content="Amber Residence — a warm, material-led interior by ARCA Studio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="project.css">
+</head>
+<body class="project-body">
+
+<header class="site-header project-header" id="siteHeader">
+  <a href="index.html" class="logo">ARCA</a>
+  <a href="index.html#work" class="back-link">← All Work</a>
+</header>
+
+<main>
+  <section class="project-intro">
+    <p class="project-eyebrow">Interior Design — Milan</p>
+    <h1>Amber Residence</h1>
+    <p class="project-summary">
+      A full interior renovation of a family apartment, built around walnut
+      paneling, brushed brass and honed marble. The brief called for warmth
+      without weight — rooms that feel generous in the evening and quiet
+      in the morning.
+    </p>
+    <dl class="project-facts">
+      <div><dt>Location</dt><dd>Milan, Italy</dd></div>
+      <div><dt>Year</dt><dd>2025</dd></div>
+      <div><dt>Scope</dt><dd>Interior Design</dd></div>
+      <div><dt>Size</dt><dd>240 m²</dd></div>
+    </dl>
+  </section>
+
+  <section class="gallery" id="gallery" aria-roledescription="carousel" aria-label="Project gallery">
+    <div class="gallery-stage">
+      <button class="gallery-arrow gallery-prev" id="galleryPrev" aria-label="Previous image">‹</button>
+
+      <div class="gallery-track" id="galleryTrack">
+        <figure class="gallery-slide is-active" data-index="0">
+          <img src="assets/img/gallery/living-01.svg" alt="Living room with sculptural brass chandelier and twin sofas">
+          <figcaption>The main living room, viewed from the entry — brass chandelier and walnut media wall.</figcaption>
+        </figure>
+        <figure class="gallery-slide" data-index="1">
+          <img src="assets/img/gallery/living-02.svg" alt="Marble feature wall with sculptural artwork">
+          <figcaption>Arabescato marble frames a bronze relief panel above the console.</figcaption>
+        </figure>
+        <figure class="gallery-slide" data-index="2">
+          <img src="assets/img/gallery/living-03.svg" alt="Living room seen through an arched walnut doorway">
+          <figcaption>The sitting area, framed by an arched walnut passage from the hall.</figcaption>
+        </figure>
+        <figure class="gallery-slide" data-index="3">
+          <img src="assets/img/gallery/living-04-aerial.svg" alt="Aerial view of the sectional sofa and coffee table layout">
+          <figcaption>Plan view of the seating arrangement around the bronze coffee table.</figcaption>
+        </figure>
+        <figure class="gallery-slide" data-index="4">
+          <img src="assets/img/gallery/living-05.svg" alt="Detail of the marble and bronze coffee table">
+          <figcaption>Detail — honed marble top set into a brushed bronze base.</figcaption>
+        </figure>
+      </div>
+
+      <button class="gallery-arrow gallery-next" id="galleryNext" aria-label="Next image">›</button>
+
+      <div class="gallery-counter">
+        <span id="galleryCurrent">01</span> / <span id="galleryTotal">05</span>
+      </div>
+    </div>
+
+    <div class="gallery-thumbs" id="galleryThumbs">
+      <button class="thumb is-active" data-index="0"><img src="assets/img/gallery/living-01.svg" alt=""></button>
+      <button class="thumb" data-index="1"><img src="assets/img/gallery/living-02.svg" alt=""></button>
+      <button class="thumb" data-index="2"><img src="assets/img/gallery/living-03.svg" alt=""></button>
+      <button class="thumb" data-index="3"><img src="assets/img/gallery/living-04-aerial.svg" alt=""></button>
+      <button class="thumb" data-index="4"><img src="assets/img/gallery/living-05.svg" alt=""></button>
+    </div>
+  </section>
+
+  <section class="project-nav-next">
+    <a href="index.html#work">
+      <span class="project-nav-label">Back to Selected Work</span>
+      <span class="project-nav-arrow">↑</span>
+    </a>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> ARCA Studio. All rights reserved.</p>
+  <a href="index.html#top" class="back-top">Back to top ↑</a>
+</footer>
+
+<script src="script.js"></script>
+<script src="project.js"></script>
+</body>
+</html>

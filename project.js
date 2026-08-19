@@ -16,8 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const apply = () => {
       const ratio = img.naturalWidth / img.naturalHeight;
       if (!ratio) return;
+      const isMobile = window.innerWidth <= 640;
       const maxW = stage.clientWidth;
-      const maxH = window.innerHeight * 0.78;
+      const maxH = window.innerHeight * (isMobile ? 0.55 : 0.78);
       let w = maxW;
       let h = w / ratio;
       if (h > maxH) {

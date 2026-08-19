@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1350" width="1800" height="1350">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#40382e"/>
+      <stop offset="1" stop-color="#2b241c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1800" height="1350" fill="url(#g)"/>
+  <line x1="0" y1="1107.0" x2="1800" y2="1107.0" stroke="#d8c7a8" stroke-width="2" opacity="0.5"/><rect x="450.0" y="364.4999999999999" width="900.0" height="742.5000000000001" fill="none" stroke="#d8c7a8" stroke-width="2.5" opacity="0.85"/><line x1="630.0" y1="364.4999999999999" x2="630.0" y2="1107.0" stroke="#d8c7a8" stroke-width="1" opacity="0.35"/><line x1="810.0" y1="364.4999999999999" x2="810.0" y2="1107.0" stroke="#d8c7a8" stroke-width="1" opacity="0.35"/><line x1="990.0" y1="364.4999999999999" x2="990.0" y2="1107.0" stroke="#d8c7a8" stroke-width="1" opacity="0.35"/><line x1="1170.0" y1="364.4999999999999" x2="1170.0" y2="1107.0" stroke="#d8c7a8" stroke-width="1" opacity="0.35"/><line x1="450.0" y1="550.1249999999999" x2="1350.0" y2="550.1249999999999" stroke="#d8c7a8" stroke-width="1" opacity="0.35"/><line x1="450.0" y1="735.75" x2="1350.0" y2="735.75" stroke="#d8c7a8" stroke-width="1" opacity="0.35"/><line x1="450.0" y1="921.375" x2="1350.0" y2="921.375" stroke="#d8c7a8" stroke-width="1" opacity="0.35"/>
+</svg>

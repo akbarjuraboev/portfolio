@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meridian Pavilion — ARCA Studio</title>
+<meta name="description" content="Meridian Pavilion — Cultural — Lisbon by ARCA Studio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="project.css">
+</head>
+<body class="project-body">
+
+<header class="site-header project-header" id="siteHeader">
+  <a href="index.html" class="logo">ARCA</a>
+  <a href="index.html#work" class="back-link">← All Work</a>
+</header>
+
+<main>
+  <section class="project-intro">
+    <p class="project-eyebrow">Cultural — Lisbon</p>
+    <h1>Meridian Pavilion</h1>
+    <p class="project-summary">
+      A cultural pavilion for rotating exhibitions, conceived as a single long roof lifted above the ground. Structure stays exposed throughout, so the building explains its own logic.
+    </p>
+    <dl class="project-facts">
+      <div><dt>Location</dt><dd>Lisbon, Portugal</dd></div>
+      <div><dt>Year</dt><dd>2025</dd></div>
+      <div><dt>Scope</dt><dd>Architecture</dd></div>
+      <div><dt>Size</dt><dd>1,850 m²</dd></div>
+    </dl>
+  </section>
+
+  <section class="gallery" id="gallery" aria-roledescription="carousel" aria-label="Project gallery">
+    <div class="gallery-stage">
+      <button class="gallery-arrow gallery-prev" id="galleryPrev" aria-label="Previous image">‹</button>
+
+      <div class="gallery-track" id="galleryTrack">
+        <figure class="gallery-slide is-active" data-index="0">
+          <img src="assets/img/gallery/meridian-01.svg" alt="Long pavilion roofline with exposed structure">
+          <figcaption>The primary roof plane, carried on a rhythm of slender columns.</figcaption>
+        </figure>
+        <figure class="gallery-slide" data-index="1">
+          <img src="assets/img/gallery/meridian-02.svg" alt="Pavilion entrance facade">
+          <figcaption>The entrance facade, set back beneath the overhanging roof.</figcaption>
+        </figure>
+        <figure class="gallery-slide" data-index="2">
+          <img src="assets/img/gallery/meridian-03.svg" alt="Aerial view of the pavilion layout">
+          <figcaption>Plan view — galleries arranged along a single circulation spine.</figcaption>
+        </figure>
+      </div>
+
+      <button class="gallery-arrow gallery-next" id="galleryNext" aria-label="Next image">›</button>
+
+      <div class="gallery-counter">
+        <span id="galleryCurrent">01</span> / <span id="galleryTotal">03</span>
+      </div>
+    </div>
+
+    <div class="gallery-thumbs" id="galleryThumbs">
+      <button class="thumb is-active" data-index="0"><img src="assets/img/gallery/meridian-01.svg" alt=""></button>
+      <button class="thumb" data-index="1"><img src="assets/img/gallery/meridian-02.svg" alt=""></button>
+      <button class="thumb" data-index="2"><img src="assets/img/gallery/meridian-03.svg" alt=""></button>
+    </div>
+  </section>
+
+  <section class="project-nav-next">
+    <a href="index.html#work">
+      <span class="project-nav-label">Back to Selected Work</span>
+      <span class="project-nav-arrow">↑</span>
+    </a>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> ARCA Studio. All rights reserved.</p>
+  <a href="index.html#top" class="back-top">Back to top ↑</a>
+</footer>
+
+<script src="script.js"></script>
+<script src="project.js"></script>
+</body>
+</html>

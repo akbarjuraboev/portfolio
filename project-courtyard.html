@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Courtyard House — ARCA Studio</title>
+<meta name="description" content="Courtyard House — Residential — Kyoto by ARCA Studio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="project.css">
+</head>
+<body class="project-body">
+
+<header class="site-header project-header" id="siteHeader">
+  <a href="index.html" class="logo">ARCA</a>
+  <a href="index.html#work" class="back-link">← All Work</a>
+</header>
+
+<main>
+  <section class="project-intro">
+    <p class="project-eyebrow">Residential — Kyoto</p>
+    <h1>Courtyard House</h1>
+    <p class="project-summary">
+      A single-family house organized around a central courtyard, letting light and garden reach every room without opening the house to the street. Board-formed concrete and timber trim keep the material palette quiet.
+    </p>
+    <dl class="project-facts">
+      <div><dt>Location</dt><dd>Kyoto, Japan</dd></div>
+      <div><dt>Year</dt><dd>2024</dd></div>
+      <div><dt>Scope</dt><dd>Architecture</dd></div>
+      <div><dt>Size</dt><dd>310 m²</dd></div>
+    </dl>
+  </section>
+
+  <section class="gallery" id="gallery" aria-roledescription="carousel" aria-label="Project gallery">
+    <div class="gallery-stage">
+      <button class="gallery-arrow gallery-prev" id="galleryPrev" aria-label="Previous image">‹</button>
+
+      <div class="gallery-track" id="galleryTrack">
+        <figure class="gallery-slide is-active" data-index="0">
+          <img src="assets/img/gallery/courtyard-01.svg" alt="Central courtyard framed by concrete walls">
+          <figcaption>The courtyard at the heart of the plan, open to the sky.</figcaption>
+        </figure>
+        <figure class="gallery-slide" data-index="1">
+          <img src="assets/img/gallery/courtyard-02.svg" alt="Street-facing concrete facade">
+          <figcaption>The street elevation gives little away — a single deep-set entry.</figcaption>
+        </figure>
+        <figure class="gallery-slide" data-index="2">
+          <img src="assets/img/gallery/courtyard-03.svg" alt="Living room opening onto the courtyard">
+          <figcaption>Living spaces run along the courtyard's edge, fully glazed.</figcaption>
+        </figure>
+      </div>
+
+      <button class="gallery-arrow gallery-next" id="galleryNext" aria-label="Next image">›</button>
+
+      <div class="gallery-counter">
+        <span id="galleryCurrent">01</span> / <span id="galleryTotal">03</span>
+      </div>
+    </div>
+
+    <div class="gallery-thumbs" id="galleryThumbs">
+      <button class="thumb is-active" data-index="0"><img src="assets/img/gallery/courtyard-01.svg" alt=""></button>
+      <button class="thumb" data-index="1"><img src="assets/img/gallery/courtyard-02.svg" alt=""></button>
+      <button class="thumb" data-index="2"><img src="assets/img/gallery/courtyard-03.svg" alt=""></button>
+    </div>
+  </section>
+
+  <section class="project-nav-next">
+    <a href="index.html#work">
+      <span class="project-nav-label">Back to Selected Work</span>
+      <span class="project-nav-arrow">↑</span>
+    </a>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> ARCA Studio. All rights reserved.</p>
+  <a href="index.html#top" class="back-top">Back to top ↑</a>
+</footer>
+
+<script src="script.js"></script>
+<script src="project.js"></script>
+</body>
+</html>

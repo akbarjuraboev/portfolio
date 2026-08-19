@@ -65,11 +65,19 @@
 .gallery-stage {
   position: relative;
   width: 100%;
-  height: 84vh;
+  height: 78vh;
   min-height: 480px;
-  max-height: 900px;
+  max-height: 820px;
   overflow: hidden;
   background: #241f19;
+}
+.gallery-stage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  box-shadow: inset 0 0 140px rgba(0,0,0,0.45);
 }
 .gallery-track {
   position: relative;
@@ -81,7 +89,7 @@
   inset: 0;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.7s ease;
+  transition: opacity 1s cubic-bezier(0.16,1,0.3,1);
 }
 .gallery-slide.is-active {
   opacity: 1;
@@ -96,15 +104,24 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transform: scale(1.06);
+  transition: transform 8s linear;
+}
+.gallery-slide.is-active .gallery-slide-img {
+  transform: scale(1);
 }
 .gallery-slide figcaption {
   position: absolute;
   left: 0; right: 0; bottom: 0;
-  padding: 2rem clamp(1.5rem, 5vw, 4rem);
+  z-index: 3;
+  padding: 2.5rem clamp(1.5rem, 5vw, 4rem);
   color: #fff;
-  font-size: 0.95rem;
-  max-width: 40rem;
-  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
+  max-width: 42rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
 }
 
 .gallery-arrow {
@@ -134,33 +151,35 @@
   position: absolute;
   top: clamp(1rem, 3vw, 2rem);
   right: clamp(1.5rem, 5vw, 4rem);
-  color: #fff;
-  font-size: 0.85rem;
-  letter-spacing: 0.05em;
   z-index: 5;
+  color: #fff;
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
 }
 .gallery-counter #galleryCurrent { color: var(--accent); }
 
 .gallery-thumbs {
   display: flex;
-  gap: 0.75rem;
-  padding: 1.25rem clamp(1.5rem, 5vw, 4rem) 0;
+  gap: 0.85rem;
+  padding: 1.5rem clamp(1.5rem, 5vw, 4rem) 0;
   overflow-x: auto;
 }
 .thumb {
   flex: 0 0 auto;
-  width: 96px;
-  height: 72px;
+  width: 108px;
+  height: 80px;
+  border-radius: 3px;
   border: 2px solid transparent;
   padding: 0;
   cursor: pointer;
   overflow: hidden;
-  opacity: 0.55;
-  transition: opacity 0.3s ease, border-color 0.3s ease;
+  opacity: 0.5;
+  transition: opacity 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
 }
 .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.thumb:hover { opacity: 0.85; }
-.thumb.is-active { opacity: 1; border-color: var(--accent); }
+.thumb:hover { opacity: 0.85; transform: translateY(-2px); }
+.thumb.is-active { opacity: 1; border-color: var(--accent); transform: translateY(-2px); }
 
 .project-nav-next {
   border-top: 1px solid var(--line);

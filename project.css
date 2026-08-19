@@ -88,19 +88,14 @@
   visibility: visible;
 }
 .gallery-slide-bg {
-  position: absolute;
-  inset: -20px;
-  background-size: cover;
-  background-position: center;
-  filter: blur(35px) brightness(0.55) saturate(1.1);
-  transform: scale(1.15);
+  display: none;
 }
 .gallery-slide-img {
   position: relative;
   z-index: 1;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .gallery-slide figcaption {
   position: absolute;

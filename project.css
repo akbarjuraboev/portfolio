@@ -96,20 +96,19 @@
   visibility: visible;
 }
 .gallery-slide-bg {
-  display: none;
+  position: absolute;
+  inset: -20px;
+  background-size: cover;
+  background-position: center;
+  filter: blur(40px) brightness(0.5) saturate(1.15);
+  transform: scale(1.15);
 }
 .gallery-slide-img {
   position: relative;
   z-index: 1;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center 68%;
-  transform: scale(1.06);
-  transition: transform 8s linear;
-}
-.gallery-slide.is-active .gallery-slide-img {
-  transform: scale(1);
+  object-fit: contain;
 }
 .gallery-slide figcaption {
   position: absolute;

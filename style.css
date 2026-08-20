@@ -38,36 +38,6 @@ img { display: block; max-width: 100%; }
 a { color: inherit; text-decoration: none; }
 ul { list-style: none; }
 
-/* Custom cursor */
-.has-custom-cursor, .has-custom-cursor a, .has-custom-cursor button { cursor: none; }
-.cursor-ring {
-  position: fixed;
-  top: 0; left: 0;
-  width: 32px; height: 32px;
-  margin: -16px 0 0 -16px;
-  border: 1px solid var(--accent);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-  opacity: 0;
-  transition: opacity 0.3s ease, width 0.25s ease, height 0.25s ease, margin 0.25s ease, background 0.25s ease;
-}
-.cursor-ring::after {
-  content: "";
-  position: absolute;
-  top: 50%; left: 50%;
-  width: 4px; height: 4px;
-  margin: -2px 0 0 -2px;
-  background: var(--accent);
-  border-radius: 50%;
-}
-.cursor-ring.is-visible { opacity: 1; }
-.cursor-ring.is-active {
-  width: 52px; height: 52px;
-  margin: -26px 0 0 -26px;
-  background: rgba(201, 160, 106, 0.1);
-}
-
 /* Loader */
 .loader {
   position: fixed;

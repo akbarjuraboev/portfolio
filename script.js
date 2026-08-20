@@ -71,38 +71,4 @@ document.addEventListener("DOMContentLoaded", () => {
       form.reset();
     });
   }
-
-  // Custom ring cursor
-  const cursor = document.getElementById("cursorRing");
-  const canHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
-  if (cursor && canHover) {
-    document.body.classList.add("has-custom-cursor");
-    let x = window.innerWidth / 2;
-    let y = window.innerHeight / 2;
-    let cx = x;
-    let cy = y;
-
-    window.addEventListener("mousemove", (e) => {
-      x = e.clientX;
-      y = e.clientY;
-      cursor.classList.add("is-visible");
-    });
-    document.addEventListener("mouseleave", () => cursor.classList.remove("is-visible"));
-
-    const hoverTargets = "a, button, .thumb, .project, .team-member";
-    document.addEventListener("mouseover", (e) => {
-      if (e.target.closest(hoverTargets)) cursor.classList.add("is-active");
-    });
-    document.addEventListener("mouseout", (e) => {
-      if (e.target.closest(hoverTargets)) cursor.classList.remove("is-active");
-    });
-
-    function tick() {
-      cx += (x - cx) * 0.18;
-      cy += (y - cy) * 0.18;
-      cursor.style.transform = `translate(${cx}px, ${cy}px)`;
-      requestAnimationFrame(tick);
-    }
-    tick();
-  }
 });

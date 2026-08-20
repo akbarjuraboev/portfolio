@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const stage = document.getElementById("galleryStage");
   const frame = document.getElementById("galleryFrame");
+  const lightbox = document.getElementById("galleryLightbox");
+  const gridItems = Array.from(document.querySelectorAll(".gallery-grid-item"));
   const slides = Array.from(track.querySelectorAll(".gallery-slide"));
   const thumbs = Array.from(document.querySelectorAll(".thumb"));
   const currentEl = document.getElementById("galleryCurrent");
@@ -44,8 +46,32 @@ document.addEventListener("DOMContentLoaded", () => {
     fitFrame(slides[index].querySelector(".gallery-slide-img"));
   }
 
+  function openLightbox(startIndex) {
+    lightbox.classList.add("is-open");
+    document.body.classList.add("lightbox-open");
+    show(startIndex);
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove("is-open");
+    document.body.classList.remove("lightbox-open");
+  }
+
+  gridItems.forEach((item) => {
+    item.addEventListener("click", () => openLightbox(Number(item.dataset.index)));
+  });
+
+  const closeBtn = document.getElementById("lightboxClose");
+  if (closeBtn) closeBtn.addEventListener("click", closeLightbox);
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
   window.addEventListener("resize", () => {
-    fitFrame(slides[index].querySelector(".gallery-slide-img"));
+    if (lightbox.classList.contains("is-open")) {
+      fitFrame(slides[index].querySelector(".gallery-slide-img"));
+    }
   });
 
   document.getElementById("galleryPrev").addEventListener("click", () => show(index - 1));
@@ -56,8 +82,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.addEventListener("keydown", (e) => {
+    if (!lightbox.classList.contains("is-open")) return;
     if (e.key === "ArrowLeft") show(index - 1);
     if (e.key === "ArrowRight") show(index + 1);
+    if (e.key === "Escape") closeLightbox();
   });
 
   // Swipe support
@@ -69,6 +97,4 @@ document.addEventListener("DOMContentLoaded", () => {
     if (Math.abs(dx) > 40) show(dx > 0 ? index - 1 : index + 1);
     touchStartX = null;
   });
-
-  fitFrame(slides[0].querySelector(".gallery-slide-img"));
 });

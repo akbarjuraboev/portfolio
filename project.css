@@ -1,4 +1,5 @@
 .project-body { background: var(--bg); }
+body.lightbox-open { overflow: hidden; }
 
 .project-header {
   position: sticky;
@@ -62,6 +63,71 @@
 .gallery {
   padding: 1rem 0 3rem;
 }
+
+/* Grid (default visible view) */
+.gallery-grid {
+  column-count: 2;
+  column-gap: 4px;
+  padding: 0 clamp(1.5rem, 5vw, 4rem);
+}
+.gallery-grid-item {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 0;
+  margin: 0 0 4px;
+  break-inside: avoid;
+  cursor: pointer;
+  overflow: hidden;
+  background: var(--bg-alt);
+}
+.gallery-grid-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.16,1,0.3,1), filter 0.4s ease;
+}
+.gallery-grid-item:hover img {
+  transform: scale(1.03);
+  filter: brightness(0.85);
+}
+@media (min-width: 720px) {
+  .gallery-grid { column-count: 3; }
+}
+@media (min-width: 1100px) {
+  .gallery-grid { column-count: 4; }
+}
+
+/* Lightbox (opens on grid click) */
+.gallery-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(8, 6, 4, 0.95);
+  padding: clamp(1rem, 4vw, 2.5rem) 0 1rem;
+  overflow-y: auto;
+}
+.gallery-lightbox.is-open { display: block; }
+.lightbox-close {
+  position: fixed;
+  top: clamp(1rem, 3vw, 2rem);
+  right: clamp(1.25rem, 4vw, 3rem);
+  z-index: 210;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+.lightbox-close:hover { background: var(--accent); border-color: var(--accent); }
+
 .gallery-stage {
   position: relative;
   display: flex;
@@ -70,7 +136,7 @@
   width: 100%;
   min-height: 480px;
   padding: 1.5rem 0;
-  background: var(--bg);
+  background: transparent;
 }
 .gallery-frame {
   position: relative;

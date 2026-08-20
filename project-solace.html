@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Solace Hotel — ARCA Studio</title>
-<meta name="description" content="Solace Hotel — Hospitality — Oaxaca by ARCA Studio.">
+<title>Solace Hotel — ARCA</title>
+<meta name="description" content="Solace Hotel — Гостиничный проект — Оахака, студия ARCA.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
@@ -12,53 +12,53 @@
 <link rel="stylesheet" href="project.css">
 </head>
 <body class="project-body">
+<div class="cursor-ring" id="cursorRing"></div>
 
 <header class="site-header project-header" id="siteHeader">
   <a href="index.html" class="logo">ARCA</a>
-  <a href="index.html#work" class="back-link">← All Work</a>
+  <a href="index.html#work" class="back-link">← Все проекты</a>
 </header>
 
 <main>
   <section class="project-intro">
-    <p class="project-eyebrow">Hospitality — Oaxaca</p>
+    <p class="project-eyebrow">Гостиничный проект — Оахака</p>
     <h1>Solace Hotel</h1>
     <p class="project-summary">
-      A twelve-room boutique hotel built around a sequence of arched courtyards, referencing the colonnades of the old town without copying them literally.
+      Бутик-отель на двенадцать номеров, выстроенный вокруг череды дворов с аркадами, — отсылка к колоннадам старого города без прямого копирования.
     </p>
     <dl class="project-facts">
-      <div><dt>Location</dt><dd>Oaxaca, Mexico</dd></div>
-      <div><dt>Year</dt><dd>2024</dd></div>
-      <div><dt>Scope</dt><dd>Architecture & Interior Design</dd></div>
-      <div><dt>Size</dt><dd>2,400 m²</dd></div>
+      <div><dt>Локация</dt><dd>Оахака, Мексика</dd></div>
+      <div><dt>Год</dt><dd>2024</dd></div>
+      <div><dt>Профиль</dt><dd>Архитектура и дизайн интерьера</dd></div>
+      <div><dt>Площадь</dt><dd>2 400 м²</dd></div>
     </dl>
   </section>
 
-  <section class="gallery" id="gallery" aria-roledescription="carousel" aria-label="Project gallery">
+  <section class="gallery" id="gallery" aria-roledescription="carousel" aria-label="Галерея проекта">
     <div class="gallery-stage" id="galleryStage">
-      <button class="gallery-arrow gallery-prev" id="galleryPrev" aria-label="Previous image">‹</button>
+      <button class="gallery-arrow gallery-prev" id="galleryPrev" aria-label="Предыдущее изображение">‹</button>
 
       <div class="gallery-frame" id="galleryFrame">
       <div class="gallery-track" id="galleryTrack">
         <figure class="gallery-slide is-active" data-index="0">
           <div class="gallery-slide-bg" style="background-image:url('assets/img/gallery/solace-01.svg')"></div>
-          <img src="assets/img/gallery/solace-01.svg" alt="Arched colonnade around the hotel courtyard" class="gallery-slide-img">
-          <figcaption>The arrival courtyard, lined with a hand-plastered arcade.</figcaption>
+          <img src="assets/img/gallery/solace-01.svg" alt="Аркада вокруг внутреннего двора отеля" class="gallery-slide-img">
+          <figcaption>Входной двор, обрамлённый оштукатуренной вручную аркадой.</figcaption>
         </figure>
         <figure class="gallery-slide" data-index="1">
           <div class="gallery-slide-bg" style="background-image:url('assets/img/gallery/solace-02.svg')"></div>
-          <img src="assets/img/gallery/solace-02.svg" alt="Guest room interior with warm materials" class="gallery-slide-img">
-          <figcaption>A typical guest room, finished in lime plaster and oak.</figcaption>
+          <img src="assets/img/gallery/solace-02.svg" alt="Интерьер номера с тёплыми материалами" class="gallery-slide-img">
+          <figcaption>Типичный номер, отделанный известковой штукатуркой и дубом.</figcaption>
         </figure>
         <figure class="gallery-slide" data-index="2">
           <div class="gallery-slide-bg" style="background-image:url('assets/img/gallery/solace-03.svg')"></div>
-          <img src="assets/img/gallery/solace-03.svg" alt="Interior courtyard with garden" class="gallery-slide-img">
-          <figcaption>The second courtyard doubles as the hotel's dining terrace.</figcaption>
+          <img src="assets/img/gallery/solace-03.svg" alt="Внутренний двор с садом" class="gallery-slide-img">
+          <figcaption>Второй двор служит террасой для ресторана отеля.</figcaption>
         </figure>
       </div>
       </div>
 
-
-      <button class="gallery-arrow gallery-next" id="galleryNext" aria-label="Next image">›</button>
+      <button class="gallery-arrow gallery-next" id="galleryNext" aria-label="Следующее изображение">›</button>
 
       <div class="gallery-counter">
         <span id="galleryCurrent">01</span> / <span id="galleryTotal">03</span>
@@ -74,15 +74,52 @@
 
   <section class="project-nav-next">
     <a href="index.html#work">
-      <span class="project-nav-label">Back to Selected Work</span>
+      <span class="project-nav-label">Назад к портфолио</span>
       <span class="project-nav-arrow">↑</span>
     </a>
   </section>
 </main>
 
 <footer class="site-footer">
-  <p>© <span id="year"></span> ARCA Studio. All rights reserved.</p>
-  <a href="index.html#top" class="back-top">Back to top ↑</a>
+  <div class="footer-main">
+    <div class="footer-brand">
+      <p class="footer-logo">ARCA</p>
+      <p class="footer-blurb">Создаём пространства, в которых архитектура и искусство становятся единым целым. Каждый проект создаётся с вниманием к деталям, эстетике и индивидуальности.</p>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">О нас</p>
+      <a href="index.html#team">О студии</a>
+      <a href="index.html#team">Наша команда</a>
+      <a href="index.html#contact">Карьера</a>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">Услуги</p>
+      <a href="index.html#services">Архитектура</a>
+      <a href="index.html#services">Дизайн интерьера</a>
+      <a href="index.html#services">Реновация</a>
+      <a href="index.html#services">Консультация</a>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">Связаться</p>
+      <a href="mailto:hello@arca-design.ru">hello@arca-design.ru</a>
+      <a href="tel:+79937130313">+7 (993) 713-03-13</a>
+      <a href="index.html#contact">Записаться на встречу</a>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">Соцсети</p>
+      <a href="#">Telegram</a>
+      <a href="#">WhatsApp</a>
+      <a href="#">Instagram</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>ARCA · © <span id="year"></span> Все права защищены.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Конфиденциальность</a>
+      <a href="#">Условия использования</a>
+      <a href="index.html#top" class="back-top">Наверх ↑</a>
+    </div>
+  </div>
 </footer>
 
 <script src="script.js"></script>

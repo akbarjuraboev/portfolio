@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Courtyard House — ARCA Studio</title>
-<meta name="description" content="Courtyard House — Residential — Kyoto by ARCA Studio.">
+<title>Courtyard House — ARCA</title>
+<meta name="description" content="Courtyard House — Жилой дом — Киото, студия ARCA.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
@@ -12,53 +12,53 @@
 <link rel="stylesheet" href="project.css">
 </head>
 <body class="project-body">
+<div class="cursor-ring" id="cursorRing"></div>
 
 <header class="site-header project-header" id="siteHeader">
   <a href="index.html" class="logo">ARCA</a>
-  <a href="index.html#work" class="back-link">← All Work</a>
+  <a href="index.html#work" class="back-link">← Все проекты</a>
 </header>
 
 <main>
   <section class="project-intro">
-    <p class="project-eyebrow">Residential — Kyoto</p>
+    <p class="project-eyebrow">Жилой дом — Киото</p>
     <h1>Courtyard House</h1>
     <p class="project-summary">
-      A single-family house organized around a central courtyard, letting light and garden reach every room without opening the house to the street. Board-formed concrete and timber trim keep the material palette quiet.
+      Дом для одной семьи, выстроенный вокруг центрального дворика — свет и сад проникают в каждую комнату, а сам дом остаётся закрытым от улицы. Бетон в опалубке и деревянные вставки сохраняют сдержанную палитру материалов.
     </p>
     <dl class="project-facts">
-      <div><dt>Location</dt><dd>Kyoto, Japan</dd></div>
-      <div><dt>Year</dt><dd>2024</dd></div>
-      <div><dt>Scope</dt><dd>Architecture</dd></div>
-      <div><dt>Size</dt><dd>310 m²</dd></div>
+      <div><dt>Локация</dt><dd>Киото, Япония</dd></div>
+      <div><dt>Год</dt><dd>2024</dd></div>
+      <div><dt>Профиль</dt><dd>Архитектура</dd></div>
+      <div><dt>Площадь</dt><dd>310 м²</dd></div>
     </dl>
   </section>
 
-  <section class="gallery" id="gallery" aria-roledescription="carousel" aria-label="Project gallery">
+  <section class="gallery" id="gallery" aria-roledescription="carousel" aria-label="Галерея проекта">
     <div class="gallery-stage" id="galleryStage">
-      <button class="gallery-arrow gallery-prev" id="galleryPrev" aria-label="Previous image">‹</button>
+      <button class="gallery-arrow gallery-prev" id="galleryPrev" aria-label="Предыдущее изображение">‹</button>
 
       <div class="gallery-frame" id="galleryFrame">
       <div class="gallery-track" id="galleryTrack">
         <figure class="gallery-slide is-active" data-index="0">
           <div class="gallery-slide-bg" style="background-image:url('assets/img/gallery/courtyard-01.svg')"></div>
-          <img src="assets/img/gallery/courtyard-01.svg" alt="Central courtyard framed by concrete walls" class="gallery-slide-img">
-          <figcaption>The courtyard at the heart of the plan, open to the sky.</figcaption>
+          <img src="assets/img/gallery/courtyard-01.svg" alt="Центральный дворик, окружённый бетонными стенами" class="gallery-slide-img">
+          <figcaption>Дворик в центре плана дома, открытый небу.</figcaption>
         </figure>
         <figure class="gallery-slide" data-index="1">
           <div class="gallery-slide-bg" style="background-image:url('assets/img/gallery/courtyard-02.svg')"></div>
-          <img src="assets/img/gallery/courtyard-02.svg" alt="Street-facing concrete facade" class="gallery-slide-img">
-          <figcaption>The street elevation gives little away — a single deep-set entry.</figcaption>
+          <img src="assets/img/gallery/courtyard-02.svg" alt="Бетонный фасад, выходящий на улицу" class="gallery-slide-img">
+          <figcaption>Уличный фасад почти ничего не выдаёт — единственный глубокий вход.</figcaption>
         </figure>
         <figure class="gallery-slide" data-index="2">
           <div class="gallery-slide-bg" style="background-image:url('assets/img/gallery/courtyard-03.svg')"></div>
-          <img src="assets/img/gallery/courtyard-03.svg" alt="Living room opening onto the courtyard" class="gallery-slide-img">
-          <figcaption>Living spaces run along the courtyard's edge, fully glazed.</figcaption>
+          <img src="assets/img/gallery/courtyard-03.svg" alt="Гостиная, открывающаяся во внутренний дворик" class="gallery-slide-img">
+          <figcaption>Жилые пространства проходят вдоль дворика, полностью остеклённые.</figcaption>
         </figure>
       </div>
       </div>
 
-
-      <button class="gallery-arrow gallery-next" id="galleryNext" aria-label="Next image">›</button>
+      <button class="gallery-arrow gallery-next" id="galleryNext" aria-label="Следующее изображение">›</button>
 
       <div class="gallery-counter">
         <span id="galleryCurrent">01</span> / <span id="galleryTotal">03</span>
@@ -74,15 +74,52 @@
 
   <section class="project-nav-next">
     <a href="index.html#work">
-      <span class="project-nav-label">Back to Selected Work</span>
+      <span class="project-nav-label">Назад к портфолио</span>
       <span class="project-nav-arrow">↑</span>
     </a>
   </section>
 </main>
 
 <footer class="site-footer">
-  <p>© <span id="year"></span> ARCA Studio. All rights reserved.</p>
-  <a href="index.html#top" class="back-top">Back to top ↑</a>
+  <div class="footer-main">
+    <div class="footer-brand">
+      <p class="footer-logo">ARCA</p>
+      <p class="footer-blurb">Создаём пространства, в которых архитектура и искусство становятся единым целым. Каждый проект создаётся с вниманием к деталям, эстетике и индивидуальности.</p>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">О нас</p>
+      <a href="index.html#team">О студии</a>
+      <a href="index.html#team">Наша команда</a>
+      <a href="index.html#contact">Карьера</a>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">Услуги</p>
+      <a href="index.html#services">Архитектура</a>
+      <a href="index.html#services">Дизайн интерьера</a>
+      <a href="index.html#services">Реновация</a>
+      <a href="index.html#services">Консультация</a>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">Связаться</p>
+      <a href="mailto:hello@arca-design.ru">hello@arca-design.ru</a>
+      <a href="tel:+79937130313">+7 (993) 713-03-13</a>
+      <a href="index.html#contact">Записаться на встречу</a>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">Соцсети</p>
+      <a href="#">Telegram</a>
+      <a href="#">WhatsApp</a>
+      <a href="#">Instagram</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>ARCA · © <span id="year"></span> Все права защищены.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Конфиденциальность</a>
+      <a href="#">Условия использования</a>
+      <a href="index.html#top" class="back-top">Наверх ↑</a>
+    </div>
+  </div>
 </footer>
 
 <script src="script.js"></script>

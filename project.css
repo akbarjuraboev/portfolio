@@ -2,7 +2,7 @@
 
 .project-header {
   position: sticky;
-  background: var(--ink);
+  background: var(--bg-alt);
   mix-blend-mode: normal;
   color: #fff;
 }
@@ -35,7 +35,7 @@
 .project-summary {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: #3a352c;
+  color: var(--muted);
   max-width: 42rem;
   margin-bottom: 2.5rem;
 }
@@ -129,7 +129,7 @@
   height: 48px;
   border-radius: 50%;
   border: 1px solid var(--line);
-  background: var(--ink);
+  background: var(--bg-alt);
   color: #fff;
   font-size: 1.6rem;
   line-height: 1;

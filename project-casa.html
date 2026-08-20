@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Casa Alba — ARCA Studio</title>
-<meta name="description" content="Casa Alba — Residential — Ibiza by ARCA Studio.">
+<title>Casa Alba — ARCA</title>
+<meta name="description" content="Casa Alba — Жилой дом — Ибица, студия ARCA.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
@@ -12,53 +12,53 @@
 <link rel="stylesheet" href="project.css">
 </head>
 <body class="project-body">
+<div class="cursor-ring" id="cursorRing"></div>
 
 <header class="site-header project-header" id="siteHeader">
   <a href="index.html" class="logo">ARCA</a>
-  <a href="index.html#work" class="back-link">← All Work</a>
+  <a href="index.html#work" class="back-link">← Все проекты</a>
 </header>
 
 <main>
   <section class="project-intro">
-    <p class="project-eyebrow">Residential — Ibiza</p>
+    <p class="project-eyebrow">Жилой дом — Ибица</p>
     <h1>Casa Alba</h1>
     <p class="project-summary">
-      A whitewashed villa stepped down a hillside toward the sea, its terraces and pool treated as outdoor rooms rather than leftover space around the house.
+      Белоснежная вилла, спускающаяся по склону холма к морю, — террасы и бассейн трактованы как самостоятельные пространства, а не остаточная территория вокруг дома.
     </p>
     <dl class="project-facts">
-      <div><dt>Location</dt><dd>Ibiza, Spain</dd></div>
-      <div><dt>Year</dt><dd>2023</dd></div>
-      <div><dt>Scope</dt><dd>Architecture & Interior Design</dd></div>
-      <div><dt>Size</dt><dd>420 m²</dd></div>
+      <div><dt>Локация</dt><dd>Ибица, Испания</dd></div>
+      <div><dt>Год</dt><dd>2023</dd></div>
+      <div><dt>Профиль</dt><dd>Архитектура и дизайн интерьера</dd></div>
+      <div><dt>Площадь</dt><dd>420 м²</dd></div>
     </dl>
   </section>
 
-  <section class="gallery" id="gallery" aria-roledescription="carousel" aria-label="Project gallery">
+  <section class="gallery" id="gallery" aria-roledescription="carousel" aria-label="Галерея проекта">
     <div class="gallery-stage" id="galleryStage">
-      <button class="gallery-arrow gallery-prev" id="galleryPrev" aria-label="Previous image">‹</button>
+      <button class="gallery-arrow gallery-prev" id="galleryPrev" aria-label="Предыдущее изображение">‹</button>
 
       <div class="gallery-frame" id="galleryFrame">
       <div class="gallery-track" id="galleryTrack">
         <figure class="gallery-slide is-active" data-index="0">
           <div class="gallery-slide-bg" style="background-image:url('assets/img/gallery/casa-01.svg')"></div>
-          <img src="assets/img/gallery/casa-01.svg" alt="White stucco villa with pool" class="gallery-slide-img">
-          <figcaption>The pool terrace, framed by the villa's stepped white volumes.</figcaption>
+          <img src="assets/img/gallery/casa-01.svg" alt="Белая вилла с бассейном" class="gallery-slide-img">
+          <figcaption>Терраса с бассейном, обрамлённая ступенчатыми белыми объёмами виллы.</figcaption>
         </figure>
         <figure class="gallery-slide" data-index="1">
           <div class="gallery-slide-bg" style="background-image:url('assets/img/gallery/casa-02.svg')"></div>
-          <img src="assets/img/gallery/casa-02.svg" alt="Exterior staircase along the hillside" class="gallery-slide-img">
-          <figcaption>Stone stairs connect the villa's terraces down the slope.</figcaption>
+          <img src="assets/img/gallery/casa-02.svg" alt="Внешняя лестница вдоль склона" class="gallery-slide-img">
+          <figcaption>Каменные ступени связывают террасы виллы вниз по склону.</figcaption>
         </figure>
         <figure class="gallery-slide" data-index="2">
           <div class="gallery-slide-bg" style="background-image:url('assets/img/gallery/casa-03.svg')"></div>
-          <img src="assets/img/gallery/casa-03.svg" alt="Interior living space with sea view" class="gallery-slide-img">
-          <figcaption>The main living room opens fully to the terrace and sea beyond.</figcaption>
+          <img src="assets/img/gallery/casa-03.svg" alt="Интерьер гостиной с видом на море" class="gallery-slide-img">
+          <figcaption>Основная гостиная полностью открывается на террасу и море.</figcaption>
         </figure>
       </div>
       </div>
 
-
-      <button class="gallery-arrow gallery-next" id="galleryNext" aria-label="Next image">›</button>
+      <button class="gallery-arrow gallery-next" id="galleryNext" aria-label="Следующее изображение">›</button>
 
       <div class="gallery-counter">
         <span id="galleryCurrent">01</span> / <span id="galleryTotal">03</span>
@@ -74,15 +74,52 @@
 
   <section class="project-nav-next">
     <a href="index.html#work">
-      <span class="project-nav-label">Back to Selected Work</span>
+      <span class="project-nav-label">Назад к портфолио</span>
       <span class="project-nav-arrow">↑</span>
     </a>
   </section>
 </main>
 
 <footer class="site-footer">
-  <p>© <span id="year"></span> ARCA Studio. All rights reserved.</p>
-  <a href="index.html#top" class="back-top">Back to top ↑</a>
+  <div class="footer-main">
+    <div class="footer-brand">
+      <p class="footer-logo">ARCA</p>
+      <p class="footer-blurb">Создаём пространства, в которых архитектура и искусство становятся единым целым. Каждый проект создаётся с вниманием к деталям, эстетике и индивидуальности.</p>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">О нас</p>
+      <a href="index.html#team">О студии</a>
+      <a href="index.html#team">Наша команда</a>
+      <a href="index.html#contact">Карьера</a>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">Услуги</p>
+      <a href="index.html#services">Архитектура</a>
+      <a href="index.html#services">Дизайн интерьера</a>
+      <a href="index.html#services">Реновация</a>
+      <a href="index.html#services">Консультация</a>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">Связаться</p>
+      <a href="mailto:hello@arca-design.ru">hello@arca-design.ru</a>
+      <a href="tel:+79937130313">+7 (993) 713-03-13</a>
+      <a href="index.html#contact">Записаться на встречу</a>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">Соцсети</p>
+      <a href="#">Telegram</a>
+      <a href="#">WhatsApp</a>
+      <a href="#">Instagram</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>ARCA · © <span id="year"></span> Все права защищены.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Конфиденциальность</a>
+      <a href="#">Условия использования</a>
+      <a href="index.html#top" class="back-top">Наверх ↑</a>
+    </div>
+  </div>
 </footer>
 
 <script src="script.js"></script>
